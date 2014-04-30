@@ -50,17 +50,14 @@ class Jboersma_Design_Model_Packages
         $dependPackages = array();
         foreach ($packages as $package) {
 
-            if (Mage_Core_Model_Design_Package::DEFAULT_PACKAGE === $package) {
-                // Do not default
-                continue;
-            } else if (Mage_Core_Model_Design_Package::BASE_PACKAGE === $package) {
+            if (Mage_Core_Model_Design_Package::BASE_PACKAGE === $package) {
                 // Do not add base
                 continue;
             } else if (Jboersma_Design_Model_Design_Package::ENTERPRISE_PACKAGE === $package) {
-                // Do not add enterprise, it is added by default for enterprise installation
+                // Do not add enterprise, it is added by default for enterprise installations
                 continue;
             } else if (!in_array(Mage_Core_Model_Design_Package::DEFAULT_THEME, $designPackage->getThemeList($package))) {
-                // No default theme
+                // No default theme in this package
                 continue;
             }
 
