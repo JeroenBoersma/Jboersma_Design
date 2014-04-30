@@ -36,9 +36,18 @@ The result could be:
 - /app/design/frontend/site/view
 - /app/design/frontend/site/default
 - /app/design/frontend/external/default
-- /app/design/frontend/default/default
 - /app/design/frontend/base/default
 
+*Module package example*
+
+If you create a module, people copy this into base/default because the do not know the packages installed.
+Now you can create a package modules and put your code in there.
+Add a dependency on modules and the code will be loaded from there.
+
+The result could be:
+- /app/design/frontend/default/default
+- /app/design/frontend/modules/default
+- /app/design/frontend/base/default
 
 
 
