@@ -1,4 +1,4 @@
-Jboersma Design dependencies
+Magento Design dependencies
 ============================
 
 This module adds depencies on other packages you have downloaded from the internet.
