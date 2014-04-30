@@ -13,7 +13,7 @@ The problem
 You normally would need to copy everything else from Enterprise directory
 to re-enable Enterprise code.
 
-*For example:*
+*Enterprise example*
 
 Install own package blah
 - /app/design/frontend/blah/default
@@ -24,6 +24,20 @@ With this module, enterprise is readded again.
 - /app/design/frontend/enterprise/default
 - /app/design/frontend/base/default
 
+
+*External package example*
+
+Download a external package(for example Themeforest), install that package.
+Normally you would need to copy the full package if you don't want to touch the original code.
+
+With this module, you can just copy the files you need and add a dependency on the external package.
+
+The result could be:
+- /app/design/frontend/site/view
+- /app/design/frontend/site/default
+- /app/design/frontend/external/default
+- /app/design/frontend/default/default
+- /app/design/frontend/base/default
 
 
 
