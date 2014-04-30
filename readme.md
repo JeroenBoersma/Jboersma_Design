@@ -1,53 +1,61 @@
 Magento Design dependencies
 ============================
 
-This module adds depencies on other packages you have downloaded from the internet.
+Add depencies on packages you have downloaded from the internet.
 It will automaticly add the Enterprise package if you use the Enterprise version of Magento.
 
-Other dependencies you can configure in Magento itself.
+Other dependencies you can configure in the Magento Configuration.
 Add these dependencies in System / Design / Dependencies in the backend of Magento.
 
 The problem
 -----------
 
-You normally would need to copy everything else from Enterprise directory
-to re-enable Enterprise code.
+You normally would need to copy everything from your downloaded or Enterprise package
+to your site package.
 
 *Enterprise example*
 
-Install own package blah
-- /app/design/frontend/blah/default
+Install store package
+- /app/design/frontend/store/default
 - /app/design/frontend/base/default
 
-With this module, enterprise is readded again.
-- /app/design/frontend/blah/default
+With this module, enterprise will be added
+- /app/design/frontend/store/default
 - /app/design/frontend/enterprise/default
 - /app/design/frontend/base/default
 
 
 *External package example*
 
-Download a external package(for example Themeforest), install that package.
+Download a external package(for example from Themeforest), install that package.
 Normally you would need to copy the full package if you don't want to touch the original code.
 
-With this module, you can just copy the files you need and add a dependency on the external package.
+With this module, you can just copy the files needed and add a dependency on the external package.
 
 The result could be:
-- /app/design/frontend/site/view
-- /app/design/frontend/site/default
-- /app/design/frontend/external/default
+- /app/design/frontend/store/view
+- /app/design/frontend/store/default
+- /app/design/frontend/external/default <-- Read in the downloaded package
+- /app/design/frontend/enterprise/default <-- when running Enterprise
 - /app/design/frontend/base/default
 
 *Module package example*
 
-If you create a module, people copy this into base/default because the do not know the packages installed.
-Now you can create a package modules and put your code in there.
-Add a dependency on modules and the code will be loaded from there.
+If you are creating modules, people move this into base/default.
+Now you can create a package "modules" and add the dependency.
 
 The result could be:
-- /app/design/frontend/default/default
+- /app/design/frontend/store/default
 - /app/design/frontend/modules/default
 - /app/design/frontend/base/default
+
+Or:
+- /app/design/frontend/store/default
+- /app/design/frontend/external/default <-- External package
+- /app/design/frontend/modules/default <-- modules
+- /app/design/frontend/enterprise/default <-- If you are using Enterprise
+- /app/design/frontend/base/default
+
 
 
 
