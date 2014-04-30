@@ -16,13 +16,13 @@ to re-enable Enterprise code.
 *For example:*
 
 Install own package blah
-/app/design/frontend/blah/default
-/app/design/frontend/base/default
+- /app/design/frontend/blah/default
+- /app/design/frontend/base/default
 
 With this module, enterprise is readded again.
-/app/design/frontend/blah/default
-/app/design/frontend/enterprise/default
-/app/design/frontend/base/default
+- /app/design/frontend/blah/default
+- /app/design/frontend/enterprise/default
+- /app/design/frontend/base/default
 
 
 
