@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jboersma_Design>
+            <version>1.0.0.0</version>
+        </Jboersma_Design>
+    </modules>
+    <global>
+        <blocks>
+            <jboersma_design>
+                <class>Jboersma_Design_Block</class>
+            </jboersma_design>
+        </blocks>
+
+        <models>
+            <core>
+                <rewrite>
+                    <design_package>Jboersma_Design_Model_Design_Package</design_package>
+                </rewrite>
+            </core>
+            <jboersma_design>
+                <class>Jboersma_Design_Model</class>
+            </jboersma_design>
+        </models>
+
+    </global>
+</config>
